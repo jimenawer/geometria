@@ -6,6 +6,9 @@ public class Circulo extends FiguraGeometrica {
 	
 	public Circulo(double r, String tipoFigura) {
 		super(tipoFigura);
+		if (r<0){
+			r=r*-1;
+		}
 		radio = r;
 	}
 
